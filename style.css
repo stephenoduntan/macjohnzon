@@ -43,9 +43,11 @@ div.mobile-head .menu-btn{
 div.mobile-head .mobile-btn .menu-btn>img{
     width: 36px;
 }
-/* div.mobile-head .mobile-btn #close{
+div.mobile-head .mobile-btn #close{
     display: none;
-} */
+    position: relative;
+    z-index: 5;
+}
 div.section-wrapper{
     width: calc(100% - 112px);
     margin: 0 auto;
@@ -94,10 +96,11 @@ div.mobile-head{
 }
 aside.mini-nav{
     position: absolute;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    height: calc(100vh - 84.5px);
+    height: 100vh;
     background: white;
     display: none;
     flex-direction: column;
