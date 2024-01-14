@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>ProjectX</title>
+</head>
+
+<body>
+    <header>
+        <div class="section-wrapper web-head">
+            <div class="logo"><img src="./Assets/image/Frame 4.png" alt="" width="97px"></div>
+
+            <nav class="nav-items">
+                <a href="index.html" class="active"> Home </a>
+                <a href="about.html" class="inactive"> About Us </a>
+                <a href="service.html" class="inactive"> Services </a> 
+            </nav>
+
+            <div class="CTA">
+                <a href="contact.html" class="Cta-btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="section-wrapper mobile-head">
+            <div class="logo"><img src="./Assets/image/Frame 4.png" alt="" width="97px"></div>
+
+            <div class="mobile-btn">
+                <button class="menu-btn" type="menu" onclick="openMenu()" id="open">
+                    <img src="./Assets/icons/menu icon.png" alt="">
+                </button>
+                <button class="menu-btn" type="menu" onclick="closeMenu()"  id="close" style="display: none;">
+                    <img src="./Assets/icons/x.png" alt="">
+                </button>
+            </div>
+
+        </div>
+
+        <aside class="mini-nav" id="mobile-nav">
+            <nav class="nav-items">
+                <a href="index.html" class="active"> Home </a>
+                <a href="about.html" class="inactive"> About Us </a>
+                <a href="service.html" class="inactive"> Services </a>
+            </nav>
+
+            <div class="CTA">
+                <a href="contact.html" class="Cta-btn">Contact</a>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <section class="hero-section banner">
+            <div class="section-wrapper">
+
+                <!--<div class="title-block">-->
+                    <h1 class="hero-title">
+                        Embark on Unforgettable Journeys with Us
+                    </h1>
+
+                    <h4 class="hero-desc">
+                        Discover the world's wonders with our personalized travel experiences
+                    </h4>
+
+                    <a href="service.html" class="Cta-btn">Explore Services</a>
+                <!--</div>-->
+
+                <!-- <div class="hero-img">
+                    <img src="./Assets/image/hero img.png" alt="" srcset="">
+                </div> -->
+
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="section-wrapper">
+
+                <div class="about-img">
+                    <img src="./Assets/image/image.png" alt="" srcset="">
+                </div>
+
+                <div class="about-block">
+
+                    <div class="section-header" style="align-items: start;">
+                        <div class="mini-header">
+                            About us
+                        </div>
+                        <div class="block-title" style="text-align: left;">
+                            We are a top leading agency in tourism
+                        </div>
+                    </div>
+                    
+                    <p class="block-desc">
+                        Welcome to [Your Company Name], where travel meets exceptional experiences. As a leading force in the tourism industry, we specialize in curating memorable journeys that go beyond the ordinary. Our commitment is to turn your travel dreams into extraordinary realities.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="section-wrapper">
+                <div class="section-header">
+                    <div class="mini-header">
+                        Our Services
+                    </div>
+                    <div class="block-title">
+                        We offer a Variety
+                    </div>
+                </div>
+
+                <div class="service-desc" style="text-align: center;">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit vero vitae corrupti, ratione iste dolorum et illo, incidunt mollitia obcaecati rem officia quos veniam voluptatibus quia facilis enim dolor.</p>
+                </div>
+
+                
+                <div class="service-wrapper home">
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Tourism</h3>
+                    </div>
+
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Travel Management</h3>
+                    </div>
+                    
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Visa Assistance</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="CTA">
+                    <a href="service.html" class="Cta-btn">See more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-section">
+            <div class="section-wrapper">
+                
+                <div class="section-header">
+                    <div class="mini-header">
+                        Why choose us
+                    </div>
+                    <div class="block-title">
+                        We make beautiful memories
+                    </div>
+                </div>
+                
+
+                <div class="card-layout">
+                    <div class="card-item">
+                        <img src="./Assets/icons/experience-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Tailored Experiences</h3>
+                        <p class="card-desc">Crafted with precision, our itineraries are tailored to your preferences, ensuring every moment is uniquely yours.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/help-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Expert Guidance</h3>
+                        <p class="card-desc">Benefit from our team's vast travel knowledge and expertise. From hidden gems to iconic landmarks, we guide you to the heart of each destination.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/Frame 55.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Safety First</h3>
+                        <p class="card-desc">Your safety is our priority. We adhere to the highest safety standards, providing peace of mind throughout your journey.</p>
+                    </div>
+
+                    <div class="card-layout-img">
+                        <img src="./Assets/image/tour with date.png" alt="">
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/bath-of-immersion-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Local Immersion</h3>
+                        <p class="card-desc">
+                            Immerse yourself in the local culture with our immersive experiences. Connect with communities, savor local flavors, and create lasting memories.
+                        </p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/strategy-success-task-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Seamless Planning</h3>
+                        <p class="card-desc">Leave the logistics to us. From accommodation to transportation, we handle every detail, allowing you to focus on enjoying your adventure.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/directhit-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Customer-Centric Approach</h3>
+                        <p class="card-desc">
+                            Our commitment to excellence extends beyond destinations. Experience unmatched customer service, where your satisfaction is our ultimate goal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="CTA">
+                    <a href="about.html" class="Cta-btn">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tours">
+            <div class="section-wrapper">
+
+                <div class="section-header">
+                    <div class="mini-header">
+                        Tours
+                    </div>
+                    <div class="block-title">
+                        Places we've been to
+                    </div>
+                </div>
+                
+                <div class="image-layout">
+                    <div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div>
+                    <div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div>
+                    <div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div>
+                    <div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div>
+                    <div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div>
+                    <div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div><div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div><div class="tour-card" style="background-image: url(./Assets/image/Rectangle\ 10.png)">
+                        <h3 class="tour-name">Madrasa, Turkey</h3>
+                    </div>
+                
+                </div>
+
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="section-wrapper">
+                
+                <div class="section-header">
+                    <!-- <div class="mini-header">
+                        Why choose us
+                    </div>
+     -->
+                    <div class="block-title">
+                        Hear from our Trustees
+                    </div>
+                </div>
+
+                <div class="testimonial-cards">
+                    
+                    <div class="card-item">
+                        <span class="qoute">
+                            <img src="./Assets/icons/fontisto_quote-a-left.png" alt="" width="96px">
+                        </span>
+                        <!-- <div class="card-img">
+                            <img src="" alt="">
+                        </div> -->
+                        <p class="card-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum, excepturi dolore eius recusandae aspernatur dolorum delectus soluta tempora dicta iure accusamus odit, quas assumenda nulla natus earum rerum. Dolores.
+                        </p>
+                        <div class="user-info">
+                            <span class="user-name">
+                                Ralph Edwards
+                            </span>
+                            <span class="user-post">
+                                President of Sales
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card-item">
+                        <span class="qoute">
+                            <img src="./Assets/icons/fontisto_quote-a-left.png" alt="" width="96px">
+                        </span>
+                        <!-- <div class="card-img">
+                            <img src="" alt="">
+                        </div> -->
+                        <p class="card-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum, excepturi dolore eius recusandae aspernatur dolorum delectus soluta tempora dicta iure accusamus odit, quas assumenda nulla natus earum rerum. Dolores.
+                        </p>
+                        <div class="user-info">
+                            <span class="user-name">
+                                Ralph Edwards
+                            </span>
+                            <span class="user-post">
+                                President of Sales
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-item">
+                        <span class="qoute">
+                            <img src="./Assets/icons/fontisto_quote-a-left.png" alt="" width="96px">
+                        </span>
+                        <!-- <div class="card-img">
+                            <img src="" alt="">
+                        </div> -->
+                        <p class="card-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum, excepturi dolore eius recusandae aspernatur dolorum delectus soluta tempora dicta iure accusamus odit, quas assumenda nulla natus earum rerum. Dolores.
+                        </p>
+                        <div class="user-info">
+                            <span class="user-name">
+                                Ralph Edwards
+                            </span>
+                            <span class="user-post">
+                                President of Sales
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="faqs" id="faq">
+            <div class="section-wrapper">
+
+                <div class="section-header">
+                    <div class="mini-header">
+                        Frequently Asked Questions
+                    </div>
+                    <div class="block-title">
+                        Let's clear some doubts you might have
+                    </div>
+                </div>
+                
+                <div class="faq-block">
+                    <div class="faq-item">
+                        <h3 class="faq-question">Lorem ipsum dolor sit amet?</h3>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat neque eaque placeat ducimus quas. Ipsa eveniet voluptate esse ab accusantium! Repellat voluptates voluptatum at saepe minus laudantium, id quas!
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Lorem ipsum dolor sit amet?</h3>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat neque eaque placeat ducimus quas. Ipsa eveniet voluptate esse ab accusantium! Repellat voluptates voluptatum at saepe minus laudantium, id quas!
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Lorem ipsum dolor sit amet?</h3>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat neque eaque placeat ducimus quas. Ipsa eveniet voluptate esse ab accusantium! Repellat voluptates voluptatum at saepe minus laudantium, id quas!
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Lorem ipsum dolor sit amet?</h3>
+                        <p class="faq-ans">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat neque eaque placeat ducimus quas. Ipsa eveniet voluptate esse ab accusantium! Repellat voluptates voluptatum at saepe minus laudantium, id quas!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-wrapper">
+
+            <div class="footer-block">
+                <div class="foot-item">
+                    <h3 class="item-header">Company</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="service.html">Our Services</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="mailto:macjohnzon2016@gmail.com">macjohnzon2016@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-item">
+                    <h3 class="item-header">Support</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <a href="#faq">Frequently Asked Question</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-item">
+                    <h3 class="item-header">Socials</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/instagram-167-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">Instagram</a>
+                        </li>
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/facebook-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">Facebook</a>
+                        </li>
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/twitter-3-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">X</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- <hr> -->
+
+            <div >
+                <p class="copy">
+                    &copy; 2024 MacJohnzon Holiday Travels. All rights reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById('mobile-nav').style.display = 'flex';
+            document.getElementById('close').style.display = 'block';
+            document.getElementById('open').style.display = 'none';
+        }
+        function closeMenu() {
+            document.getElementById('mobile-nav').style.display = 'none';
+            document.getElementById('close').style.display = 'none';
+            document.getElementById('open').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

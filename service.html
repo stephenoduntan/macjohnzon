@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ProjectX</title>
+</head>
+
+<body>
+    <header>
+        <div class="section-wrapper web-head">
+            <div class="logo"><img src="./Assets/image/Frame 4.png" alt="" width="97px"></div>
+
+            <nav class="nav-items">
+                <a href="index.html" class="inactive"> Home </a>
+                <a href="about.html" class="inactive"> About Us </a>
+                <a href="service.html" class="active"> Services </a> 
+            </nav>
+
+            <div class="CTA">
+                <a href="contact.html" class="Cta-btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="section-wrapper mobile-head">
+            <div class="logo"><img src="./Assets/image/Frame 4.png" alt="" width="97px"></div>
+
+            <div class="mobile-btn">
+                <button class="menu-btn" type="menu" onclick="openMenu()" id="open">
+                    <img src="./Assets/icons/menu icon.png" alt="">
+                </button>
+                <button class="menu-btn" type="menu" onclick="closeMenu()"  id="close" style="display: none;">
+                    <img src="./Assets/icons/x.png" alt="">
+                </button>
+            </div>
+
+        </div>
+
+        <aside class="mini-nav" id="mobile-nav">
+            <nav class="nav-items">
+                <a href="index.html" class="inactive"> Home </a>
+                <a href="about.html" class="inactive"> About Us </a>
+                <a href="service.html" class="active"> Services </a>
+            </nav>
+
+            <div class="CTA">
+                <a href="contact.html" class="Cta-btn">Contact</a>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <section class="page-hero banner" style="background-image: url(./Assets/image/service\ bg.png);">
+            <div class="hero-wrapper">
+                <h2 class="page-title">Services</h2>
+                <div class="mini-nav">
+                    <a href="index.html" class="backpage">
+                        <img src="./Assets/icons/Home.png" alt="" width="20px">
+                       <span>Home</span>
+                    </a>
+                    <img src="./Assets/icons/chevron-right.png" alt="" width="24px">
+                    <span class="currentpage">Services</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="section-wrapper">
+
+                <div class="service-desc">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate reprehenderit vero vitae corrupti, ratione iste dolorum et illo, incidunt mollitia obcaecati rem officia quos veniam voluptatibus quia facilis enim dolor.</p>
+                </div>
+
+                
+                <div class="service-wrapper">
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Tourism</h3>
+                    </div>
+
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Travel Management</h3>
+                    </div>
+                    
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Visa Assistance</h3>
+                    </div>
+                    
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Travel Insurance</h3>
+                    </div>
+                    
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Hotel Booking</h3>
+                    </div>
+                    
+                    <div class="service-card" style="background-image: url(./Assets/image/service\ bg.png);">
+                        <h3 class="service-name">Tour Packaging</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-wrapper">
+
+            <div class="footer-block">
+                <div class="foot-item">
+                    <h3 class="item-header">Company</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="service.html">Our Services</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="mailto:macjohnzon2016@gmail.com">macjohnzon2016@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-item">
+                    <h3 class="item-header">Support</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <a href="#">Frequently Asked Question</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-item">
+                    <h3 class="item-header">Socials</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/instagram-167-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">Instagram</a>
+                        </li>
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/facebook-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">Facebook</a>
+                        </li>
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/twitter-3-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">X</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div >
+                <p class="copy">
+                    &copy; 2024 MacJohnzon Holiday Travels. All rights reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById('mobile-nav').style.display = 'flex';
+            document.getElementById('close').style.display = 'block';
+            document.getElementById('open').style.display = 'none';
+        }
+        function closeMenu() {
+            document.getElementById('mobile-nav').style.display = 'none';
+            document.getElementById('close').style.display = 'none';
+            document.getElementById('open').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

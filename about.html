@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ProjectX</title>
+</head>
+
+<body>
+    <header>
+        <div class="section-wrapper web-head">
+            <div class="logo"><img src="./Assets/image/Frame 4.png" alt="" width="97px"></div>
+
+            <nav class="nav-items">
+                <a href="index.html" class="inactive"> Home </a>
+                <a href="about.html" class="active"> About Us </a>
+                <a href="service.html" class="inactive"> Services </a> 
+            </nav>
+
+            <div class="CTA">
+                <a href="contact.html" class="Cta-btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="section-wrapper mobile-head">
+            <div class="logo"><img src="./Assets/image/Frame 4.png" alt="" width="97px"></div>
+
+            <div class="mobile-btn">
+                <button class="menu-btn" type="menu" onclick="openMenu()" id="open">
+                    <img src="./Assets/icons/menu icon.png" alt="">
+                </button>
+                <button class="menu-btn" type="menu" onclick="closeMenu()"  id="close" style="display: none;">
+                    <img src="./Assets/icons/x.png" alt="">
+                </button>
+            </div>
+
+        </div>
+
+        <aside class="mini-nav" id="mobile-nav">
+            <nav class="nav-items">
+                <a href="index.html" class="inactive"> Home </a>
+                <a href="about.html" class="active"> About Us </a>
+                <a href="service.html" class="inactive"> Services </a>
+            </nav>
+
+            <div class="CTA">
+                <a href="contact.html" class="Cta-btn">Contact</a>
+            </div>
+        </aside>
+    </header>
+
+    <main>
+        <section class="page-hero banner" style="background-image: url(./Assets/image/About\ bg.png);">
+            <div class="hero-wrapper">
+                <h2 class="page-title">About Us</h2>
+                <div class="mini-nav">
+                    <a href="index.html" class="backpage">
+                        <img src="./Assets/icons/Home.png" alt="" width="20px">
+                       <span>Home</span>
+                    </a>
+                    <img src="./Assets/icons/chevron-right.png" alt="" width="24px">
+                    <span class="currentpage">About Us</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="section-wrapper">
+
+                <div class="about-img">
+                    <img src="./Assets/image/image.png" alt="" srcset="">
+                </div>
+
+                <div class="about-block">
+                    <div class="section-header" style="align-items: start;">
+                        <div class="mini-header">
+                            About us
+                        </div>
+                        <div class="block-title" style="text-align: left;">
+                            We are a top leading agency in tourism
+                        </div>
+                    </div>
+
+                    <p class="block-desc">
+                        Welcome to [Your Company Name], where travel meets exceptional experiences. As a leading force in the tourism industry, we specialize in curating memorable journeys that go beyond the ordinary. Our commitment is to turn your travel dreams into extraordinary realities.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="why-section">
+            <div class="section-wrapper">
+                
+                <div class="section-header">
+                    <div class="mini-header">
+                        Why choose us
+                    </div>
+                    <div class="block-title">
+                        We make beautiful memories
+                    </div>
+                </div>
+                
+
+                <div class="card-layout">
+                    <div class="card-item">
+                        <img src="./Assets/icons/experience-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Tailored Experiences</h3>
+                        <p class="card-desc">Crafted with precision, our itineraries are tailored to your preferences, ensuring every moment is uniquely yours.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/help-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Expert Guidance</h3>
+                        <p class="card-desc">Benefit from our team's vast travel knowledge and expertise. From hidden gems to iconic landmarks, we guide you to the heart of each destination.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/Frame 55.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Safety First</h3>
+                        <p class="card-desc">Your safety is our priority. We adhere to the highest safety standards, providing peace of mind throughout your journey.</p>
+                    </div>
+
+                    <div class="card-layout-img">
+                        <img src="./Assets/image/tour with date.png" alt="" width="640px">
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/bath-of-immersion-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Local Immersion</h3>
+                        <p class="card-desc">
+                            Immerse yourself in the local culture with our immersive experiences. Connect with communities, savor local flavors, and create lasting memories.
+                        </p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/strategy-success-task-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Seamless Planning</h3>
+                        <p class="card-desc">Leave the logistics to us. From accommodation to transportation, we handle every detail, allowing you to focus on enjoying your adventure.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <img src="./Assets/icons/directhit-svgrepo-com.png" alt="" srcset="" class="card-img">
+                        <h3 class="card-title">Customer-Centric Approach</h3>
+                        <p class="card-desc">
+                            Our commitment to excellence extends beyond destinations. Experience unmatched customer service, where your satisfaction is our ultimate goal.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="extra-feature banner">
+            <div class="section-wrapper">
+                <div class="feature-card">
+                    <span class="feature-icon">
+                        <img src="./Assets/icons/hotel-room-bed-svgrepo-com.png" alt="">
+                    </span>
+                    <span class="card-title">Accommodations</span>
+                    <span class="card-desc">
+                        Immerse yourself in comfort with our curated selection of premium accommodations.
+                    </span>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">
+                        <img src="./Assets/icons/adventure-journey-location-svgrepo-com.png" alt="">
+                    </span>
+                    
+                    <span class="card-title">Guided Tours</span>
+                    <span class="card-desc">
+                        Let our expert guides lead you through the richness of each destination, unveiling its history, culture, and hidden gems.
+                    </span>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">
+                        <img src="./Assets/icons/adventure-binoculars-military-svgrepo-com.png" alt="">
+                    </span>
+                    
+                    <span class="card-title">Adventure Packages</span>
+                    <span class="card-desc">
+                        Immerse yourself in comfort with our curated selection of premium accommodations.
+                    </span>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">
+                        <img src="./Assets/icons/dishes-svgrepo-com.png" alt="">
+                    </span>
+                    
+                    <span class="card-title">Culinary Delights</span>
+                    <span class="card-desc">
+                        Indulge in a culinary journey with our curated dining experiences, featuring local flavors and international cuisines.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="section-wrapper">
+                <div class="block-title">
+                    Team
+                </div>
+                <div class="team-wrapper">
+                    <div class="team-card">
+                        <picture class="team-img">
+                            <img src="./Assets/image/team-image.png" alt="">
+                        </picture>
+                        
+                        <span class="team-name">Jacob Jones</span>
+                        <p class="team-position">Tour Guide</p>
+                    </div>
+                    <div class="team-card">
+                        <picture class="team-img">
+                            <img src="./Assets/image/team-image.png" alt="">
+                        </picture>
+                        
+                        <span class="team-name">Jacob Jones</span>
+                        <p class="team-position">Tour Guide</p>
+                    </div>
+                    <div class="team-card">
+                        <picture class="team-img">
+                            <img src="./Assets/image/team-image.png" alt="">
+                        </picture>
+                        
+                        <span class="team-name">Jacob Jones</span>
+                        <p class="team-position">Tour Guide</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <div class="section-wrapper">
+
+            <div class="footer-block">
+                <div class="foot-item">
+                    <h3 class="item-header">Company</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="service.html">Our Services</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="mailto:macjohnzon2016@gmail.com">macjohnzon2016@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-item">
+                    <h3 class="item-header">Support</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <a href="#">Frequently Asked Question</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#">Terms & Condition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-item">
+                    <h3 class="item-header">Socials</h3>
+                    <ul class="item-links">
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/instagram-167-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">Instagram</a>
+                        </li>
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/facebook-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">Facebook</a>
+                        </li>
+                        <li class="footer-link">
+                            <span class="link-icon"><img src="./Assets/icons/twitter-3-svgrepo-com 1.png" alt="" width="24px"></span><a href="#">X</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div >
+                <p class="copy">
+                    &copy; 2024 MacJohnzon Holiday Travels. All rights reserved
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function openMenu() {
+            document.getElementById('mobile-nav').style.display = 'flex';
+            document.getElementById('close').style.display = 'block';
+            document.getElementById('open').style.display = 'none';
+        }
+        function closeMenu() {
+            document.getElementById('mobile-nav').style.display = 'none';
+            document.getElementById('close').style.display = 'none';
+            document.getElementById('open').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
