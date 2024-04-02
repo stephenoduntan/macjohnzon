@@ -419,7 +419,7 @@
 
             <div >
                 <p class="copy">
-                    &copy; 2024 MacJohnzon Holiday Travels. All rights reserved
+                    &copy; <span id="cYear"></span> MacJohnzon Holiday Travels. All rights reserved
                 </p>
             </div>
 
@@ -427,6 +427,8 @@
     </footer>
 
     <script>
+        let d = new Date()
+        document.getElementById('cYear').innerText = d.getUTCFullYear;
         function openMenu() {
             document.getElementById('mobile-nav').style.display = 'flex';
             document.getElementById('close').style.display = 'block';
