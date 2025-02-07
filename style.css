@@ -18,13 +18,17 @@ a{
     text-decoration: none;
     color: var(--grey-600);
 }
+hr{
+    border: .5px solid var(--grey-400);
+    width: 100%;
+}
 .Cta-btn{
     padding: 12px 24px;
     background-color: white;
     border: 1.5px solid var(--primary-400);
     color: var(--primary-400);
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 28px;
     transition: linear .3s all;
 }
 .Cta-btn:hover{
@@ -56,6 +60,21 @@ div.section-wrapper{
     flex-direction: column;
     align-items: center;
     gap: 36px;
+}
+div.web-head{
+    max-width: 85vw;
+    position: fixed;
+    top: 24px;
+    right: 112px;
+    left: 112px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 36px;
+    background: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--primary-400);
+    border-radius: 64px;
+    
 }
 div.mini-header, .user-name{
     font-family: 'Miniver', cursive;
@@ -93,6 +112,8 @@ p{
 
 div.mobile-head{
     display: none !important;
+    margin: 0 auto;
+    padding: 12px 0px;
 }
 aside.mini-nav{
     position: fixed;
@@ -116,10 +137,10 @@ aside.mini-nav nav.nav-items{
 header .section-wrapper{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     justify-content: space-between;
-    padding: 12px 0px;
 }
+
 .banner{
     background-size: cover;
     background-position: center;
@@ -127,14 +148,15 @@ header .section-wrapper{
     color: white;
     display: flex;
     justify-content: center;
+    background-attachment: fixed;
 }
 
 
 header .nav-items{
    display: flex;
-   gap: 24px;
-   text-transform: uppercase; 
-   font-weight: 500;
+   gap: 36px;
+   /* text-transform: uppercase; */
+   font-weight: 600;
    transition: linear .5s all;
 }
 header .nav-items a:hover{
@@ -155,11 +177,11 @@ header .section-wrapper .CTA>a:hover{
 }
 
 section.hero-section{
-    height: calc(100vh - 84.5px);
+    height: calc(100vh - 0px);
     background-image: url(./Assets/image/Hero\ bg.png);
 }
 section.hero-section .section-wrapper{
-    width: 880px;
+    width: calc(100% - 360px);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -168,12 +190,13 @@ section.hero-section .section-wrapper{
     gap: 64px;
 }
 .hero-title{
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 600;
 }
-h4.hero-desc{
-    font-size: 28px;
+.hero-desc{
+    font-size: 20px;
     font-weight: 500;
+    color: white;
 }
 
 section.about .section-wrapper{
@@ -296,6 +319,7 @@ footer .footer-block{
 ul{
     display: flex;
     flex-direction: column;
+    /* width: 100%; */
     gap: 16px;
     padding: 0;
     margin: 0;
@@ -306,7 +330,7 @@ li{
     display: flex;
     gap: 16px;
 }
-li>a{
+li~a{
     color: var(--grey-500);
 }
 .foot-item .item-header{
@@ -315,10 +339,20 @@ li>a{
     border-bottom: 2px solid var(--primary-300);
     margin-bottom: 20px;
 }
-
+footer .bottom-foot{
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    width: 100%;
+}
 .copy{
     color: var(--grey-400);
-    text-align: center;
+    /* text-align: center; */
+}
+footer .bottom-foot .social-item-links{
+    display: flex;
+    flex-direction: row;
+    gap: 36px
 }
 
 section.team .block-title{
@@ -326,7 +360,7 @@ section.team .block-title{
 }
 
 section.page-hero{
-    height: calc(100vh - 280px);
+    height: calc(100vh - 160px);
 }
 
 section.page-hero .hero-wrapper{
@@ -414,12 +448,13 @@ section.contact .section-header{
 }
 section.contact .contact-wrapper{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
-    /* width: 100%; */
-    gap: 32px;
+    width: 100%;
+    gap: 8rem;
+    padding: 48px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .contact-item{
     /* flex: 1 1 50%; */
@@ -440,7 +475,15 @@ section.contact .contact-wrapper{
 .contact-item .contact-icon>img{
     width: 32px;
 }
-
+.address-map{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--grey-400);
+    border-radius: 12px;
+}
+.address-map * {
+    border-radius: 8px;
+}
 section.service .service-wrapper.home{
     flex-wrap: nowrap;
 }
@@ -458,7 +501,7 @@ section.service .service-wrapper{
     flex: 1 1 33.3%;
     display: flex;
     justify-content: center;
-    border-radius: 24px;
+    border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -467,9 +510,10 @@ section.service .service-wrapper{
     text-align: center;
 }
 
+
 @media (max-width: 430px) {
     div.section-wrapper{
-        width: calc(100% - 24px);
+        width: calc(100% - 24px) !important;!i;!;
     }
     h3{
         font-size: 24px;
@@ -495,8 +539,8 @@ section.service .service-wrapper{
     .hero-title{
         font-size: 32px;
     }
-    h4.hero-desc{
-        font-size: 20px;
+    .hero-desc{
+        font-size: 16px;
     }
     
     section.about .section-wrapper{
@@ -547,20 +591,27 @@ section.service .service-wrapper{
     }
 
     footer .section-wrapper .footer-block{
-        align-items: center;
+        /* align-items: center; */
+        gap: 48px;
         flex-direction: column;
     }
     footer .section-wrapper .foot-item{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
-    ul{
-        align-items: center;
+    .bottom-foot{
+        flex-direction: column;
     }
 
     section.team .team-wrapper{
         flex-direction: column;
+    }
+
+    section.contact .contact-wrapper{
+        flex-direction: column;
+        padding: 20px;
+        gap: 4rem;
     }
     
 }
