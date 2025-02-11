@@ -22,6 +22,16 @@ hr{
     border: .5px solid var(--grey-400);
     width: 100%;
 }
+
+.logo{
+    background-image: url(Assets/image/MY\ LOGO\ transparent.png);
+    width: 96px;
+    height: 64px;
+    background-position: center -77px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .Cta-btn{
     padding: 12px 24px;
     background-color: white;
@@ -70,10 +80,11 @@ div.web-head{
     width: 100%;
     margin: 0 auto;
     padding: 16px 36px;
-    background: rgba(255, 255, 255, 0.404);
+    background: rgb(255 255 255 / 25%);
     backdrop-filter: blur(8px);
     border: 1px solid var(--primary-400);
     border-radius: 64px;
+    z-index: 7;
 }
 div.mini-header, .user-name{
     font-family: 'Miniver', cursive;
@@ -142,7 +153,7 @@ header .section-wrapper{
 
 .banner{
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     color: white;
     display: flex;
@@ -159,7 +170,7 @@ header .nav-items{
    transition: linear .5s all;
 }
 header .nav-items a:hover{
-    color: var(--primary-300);
+    color: var(--primary-400);
 }
 header .nav-items .active{
     font-weight: 600;
@@ -250,6 +261,10 @@ section.tours .image-layout{
     width: 100%;
     gap: 12px;
     justify-content: space-between;
+}
+section.tours .tour-card>a{
+    position: absolute;
+    inset: 0;
 }
 
 section.testimonial{
@@ -361,7 +376,7 @@ section.team .block-title{
 }
 
 section.page-hero{
-    height: calc(100vh - 160px);
+    height: calc(100vh - 100px);
 }
 
 section.page-hero .hero-wrapper{
@@ -449,16 +464,15 @@ section.contact .section-header{
 }
 section.contact .contact-wrapper{
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     width: 100%;
     gap: 8rem;
     padding: 48px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 .contact-item{
-    /* flex: 1 1 50%; */
+    flex: 1 1 15%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -498,13 +512,16 @@ section.service .service-wrapper{
 }
 .service-card,
 .tour-card{
-    padding: 124px 0px;
+    position: relative;
+    padding: 240px 0px;
     flex: 1 1 33.3%;
     display: flex;
     justify-content: center;
     border-radius: 16px;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    z-index: 0;
 }
 .service-card>h3,.tour-card>h3{
     color: white;
@@ -582,6 +599,9 @@ section.service .service-wrapper{
     section.tours .image-layout{
         flex-direction: column;
     }
+    .service-card, .tour-card{
+        padding: 120px 0px;
+    }
 
     section.testimonial .testimonial-cards{
         flex-wrap: nowrap;
@@ -613,6 +633,10 @@ section.service .service-wrapper{
         flex-direction: column;
         padding: 20px;
         gap: 4rem;
+    }
+
+    section.contact .address-map iframe{
+        height: 360px;
     }
     
 }
