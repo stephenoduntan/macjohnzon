@@ -19,7 +19,7 @@ a{
     color: var(--grey-600);
 }
 hr{
-    border: .5px solid var(--grey-400);
+    hr: .5px;
     width: 100%;
 }
 
